@@ -8,7 +8,13 @@ A Julia package for visualizing [Flux.jl](https://fluxml.ai/) neural network arc
  
 ## Installation
  
+This package is registered in [LabRegistry](https://github.com/lemieux-lab/LabRegistry)
+
 ```julia
+# With LabRegistry added in julia registry
+] add Dabus
+
+# Otherwise
 ] add https://github.com/lemieux-lab/Dabus
 ```
  
