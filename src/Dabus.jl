@@ -1,4 +1,4 @@
-# using GraphViz
+module Dabus
 
 # Note: We're using an online GraphViz API since the GraphViz
 # Julia wrapper hasn't been updated in years and doesn't work
@@ -374,4 +374,6 @@ function __tests_draw_network__()
         Dense(750, 1, identity),
         vec
     ), save_to="examples/graph_8.png")
+end
+
 end
