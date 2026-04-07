@@ -1,3 +1,12 @@
+name = "Dabus"
+uuid = "74c56633-ef59-41f5-810f-a329fb4c4e96"
+version = "0.1.0"
+
 [deps]
 Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
 HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+
+[compat]
+julia = "1"
+Flux = "0.16"
+HTTP = "1"
