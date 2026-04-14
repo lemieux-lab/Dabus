@@ -17,7 +17,7 @@ end
 """
     draw_network(network; save_to=nothing, output_type="png")
 
-Draws a given Flux network using graphviz. Returns the image of the graph as the image
+Draws a given Flux network using graphviz. Returns the image of the graph as byte array.
 If `save_to` is a given a path, also writes the image bytes to that path.
 
 # Examples
