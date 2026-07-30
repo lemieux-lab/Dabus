@@ -7,14 +7,14 @@ using Functors
 export draw_network, network_to_dot, check_graphviz, NetworkImage
 
 # ---------------------------------------------------------------------------
-# NetworkImage — display-aware wrapper around rendered bytes
+# NetworkImage display-aware wrapper around rendered bytes
 # ---------------------------------------------------------------------------
 
 """
     NetworkImage
 
 Wraps the raw bytes returned by `draw_network`. Renders inline automatically
-in IJulia, Pluto, and the VSCode Julia extension — just evaluate the expression.
+in IJulia, Pluto, and the VSCode Julia extension.
 
 Access the raw bytes via `.bytes` for manual file I/O.
 """
@@ -118,7 +118,7 @@ function format_params(n::Int)
 end
 
 # ---------------------------------------------------------------------------
-# DOT generation — public API
+# DOT generation
 # ---------------------------------------------------------------------------
 
 """
@@ -158,7 +158,7 @@ inline in IJulia, Pluto, and the VSCode Julia extension automatically.
 - `output_type` : Output format passed to GraphViz. Common values:
   - `"png"` (default) — raster image; displays inline in notebooks and VSCode.
   - `"svg"` — scalable vector; displays inline in notebooks and VSCode.
-  - `"pdf"`, `"eps"`, `"jpg"` — supported with local `dot`; HTTP fallback may not support these.
+  - `"pdf"`, `"eps"`, `"jpg"` supported with local `dot`; HTTP fallback may not support these.
 - `renderer`    : Controls how the DOT source is rendered:
   - `:auto` (default) — uses local `dot` if found on PATH, falls back to HTTP with a warning.
   - `:local` — always uses the local `dot` binary (errors if GraphViz is not installed).
